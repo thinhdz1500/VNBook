@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="/css/aboutMe.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="container">
+                <a href="/html/index.html" class="logo">
+                    <img src="/img/picture/logo.png" alt="">
+                </a>
+                <ul class="main-menu">
+                    <li><a href="/html/index.html">HOME</a></li>
+                    <li><a href="/html/allProducts.html">BOOKS</a></li>
+                    <li><a href="/html/aboutMe.html">ABOUT ME</a></li>
+                </ul>
+                <ul class="icon-head">
+                    <li><input type="text" placeholder="Ex: Trí tuệ do thái"></li>
+                    <li><a href=""> <i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="/html/payment.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="/html/login.html"><i class="fa-regular fa-user"></i></a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <div class="banner-about">
+            <div class="banner__container">
+                <div class="shop__top">About me</div>
+                <div class="shop__botton">
+                    <div class="home"><a href="/html/index.html">Home</a></div>
+                    <div class="Shop">Me</div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="user">
+                    <div class="user-item">
+                        <img src="/img/pictureAboutUs/aboutmen.jpg" class="img-user" alt="">
+                        <div class="info">
+                            <div class="name"><strong>Nguyễn Đức Thịnh</strong></div>
+                            <small><i>MSSV:</i>21074131</small>
+                            <small><i>Lớp: </i>DHKTPM17C</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <h2>VỀ TRANG WEB NÀY</h2>
+                </div>
+                <div class="why">
+                    <div class="text">
+                        <h2>Tại sao tôi tạo ra trang web này?</h2>
+                        <i>Trang web này là sản phẩm cho dự án bài tập lớn của môn Hệ Thống Công Nghệ Web kì 2 năm học
+                            2022-2023</i> <br>
+                        <button>
+                            <a href="/html/index.html">Tìm hiểu thêm</a>
+                        </button>
+                    </div>
+                    <div class="img">
+                        <img src="/img/pictureAboutUs/Screenshot 2023-04-10 233038.png" alt="">
+                    </div>
+                </div>
+                <div class="why">
+                    <div class="ykien">
+                        <img src="/img/pictureAboutUs/sangkien.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Trang web này có gì?</h2>
+                        <i>Đây là trang web chuyên bán các loại sách đã có mặt ở Việt Nam</i> <br>
+                        <button>
+                            <a href="/html/allProducts.html">Tìm hiểu thêm</a>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <img src="/img/picture/logo.png" alt="">
+
+                <p class="footer-links">
+                    <a href="/html/index.html" class="link-1">Home</a>
+
+                    <a href="/html/allProducts.html">Books</a>
+                    
+                    <a href="/html/aboutMe.html">About Me</a>
+                </p>
+
+                <p class="footer-company-name">Copyright © 2023 | Tất cả bản quyền thuộc về Nguyễn Đức Thịnh</p>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>60/18 Huỳnh Khương An</span> Phường 5, Gò Vấp, tp HCM</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>0327410155</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">thinhdz1500@gmail.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    The premier media marketplace connecting you to over 200 million books, movies, and albums
+                    from thousands of independent sellers worldwide.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky');
+                }
+                else {
+                    $('header').removeClass('sticky');
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

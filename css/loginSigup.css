@@ -1,0 +1,397 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  html, body {
+      margin: 0;
+      padding: 0;
+    }
+  
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+      padding-top: 20px;
+      border-bottom: 1px solid rgba(197, 194, 194, 0.12);
+  }
+  
+  .banner { 
+      background-image: url(/img/picture/bg__header-product1.jpg);
+      min-height: 400px;
+      background-position-y: -200px;
+      background-size: cover;
+      width: 100%;
+  }
+  .banner__container{
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      top: 200px;
+  }
+  .banner__container .shop__top{
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 20px;
+  }
+  .banner__container .shop__botton{
+      display: flex;
+      justify-content: center;
+  }
+  .banner__container .shop__botton .home a{
+      transition: all 300ms ease-in 0s;
+      padding-right: 20px;
+      text-decoration: none;
+      color: #fff;
+  }
+  .banner__container .shop__botton .home a:hover{
+      color: #CE7852;
+  }
+  .banner__container .shop__botton .Shop{
+      color: #CE7852;
+  }
+  .banner__container .shop__botton .Shop::before{
+      content: "/";
+      font-size: 20px;
+      padding-right: 20px;
+      color: #FFFFFF;
+  }
+  header.sticky {
+      background: black;
+      /* width: 100%; */
+      opacity: 0.9;
+      padding: 0;
+  }
+  
+  header.sticky .container .main-menu a {
+      color: #FFFFFF;
+  }
+  
+  header.sticky .container .icon-head i {
+      color: #FFFFFF;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      justify-items: center;
+  
+  }
+  
+  .logo {
+      /* margin-top: 15px; */
+      margin-right: 20px;
+      margin-left: 60px;
+  }
+  
+  .main-menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 20px;
+  }
+  
+  .main-menu li a {
+      color: #ffffff;
+      display: flex;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 0 20px;
+      text-transform: uppercase;
+      /* transition: all 0.4s ease 0s; */
+      text-decoration: none;
+  }
+  
+  .icon-head {
+      display: flex;
+      list-style: none;
+      /* padding: 0; */
+      padding-right: 100px;
+      padding-top: 5px;
+  }
+  
+  .icon-head li a {
+      color: #ffffff;
+      display: block;
+      padding: 0 15px;
+      font-size: 16px;
+  }
+  .icon-head li input{
+      height: 10px;
+      width: 300px;
+      padding: 10px;
+      position: relative;
+      bottom: 6px;
+      border-radius: 10px;
+      border: 0;
+      outline: none;
+  }
+  section{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+  }
+#form-login{
+  margin: 50px 0px;
+    max-width: 400px;
+    height: auto;
+    background: #fff;
+    flex-grow: 1;
+    padding: 30px 30px  40px;
+    border-radius: 15px;
+   
+}
+.form-heading{
+    font-size: 25px;
+    color: rgb(57, 116, 167);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.form-group{
+   margin-top: 15px;
+   margin-bottom: 30px;
+   display: flex;
+   border-radius: 25px;
+   border: 1px solid ;
+   transition: border-color 0.3s ease-in-out;
+   width: 100%;
+   position: relative;
+}
+.form-group:hover{
+  border: 0;
+  box-shadow: 0 0 5px #fabc75; /* Hiển thị đường viền */
+}
+
+/* Khi input được focus */
+.form-group:focus-within{
+  border: 0;
+  box-shadow: 0 0 5px #fabc75; /* Hiển thị đường viền */
+  border-radius: 25px;
+}
+.form-group i{
+    color: #fabc75;
+    margin: 13px 20px 13px 15px;
+    font-size: 17px;
+}
+.form-group img{
+    color: #a57b4a;
+    margin: 13px 20px 13px 15px;
+    font-size: 9px;
+}
+.form-group small{
+  position: absolute;
+  top: 45px;
+  right: 200px;
+  left: 20px;
+  max-width: 300px;
+}
+.form-group.error small{
+  color: #e74c3c;
+
+}
+.form-group.error {
+  border-color: #e74c3c;
+}
+.form-input{
+    background: none;
+    border: 0;
+    height: 38px;
+    outline: 0;
+    color: #211e1e;
+    flex-grow: 1;
+    border-radius: 25px;
+}
+/* Thêm màu cho chữ */
+.form-input::placeholder{
+    color: rgba(24, 23, 23, 0.3);
+}
+.form-dki{
+    text-decoration: none;
+    font-size: 17px;
+    color: #f58c14;
+    cursor: pointer;
+}
+.form-forgetPass{
+    text-decoration: none;
+    font-size: 17px;
+    color: #f58c14;
+    float: right;
+}
+.form-submit{
+    background: #fabc75;
+    border: 1px solid #f5f5f5;
+    border-radius: 25px;
+    color: #fff;
+    width:100%;
+    height: 40px;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out ;
+    margin-top: 30px;
+}
+.form-submit:hover{
+    border:1px solid #54a0ff;
+}
+
+.text-fast-login{
+    position: relative;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+.text-fast-login::before {
+    content: "Đăng nhập nhanh";
+    position: absolute;
+    background: transparent;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    background-color: white;
+    text-align: center;
+  }
+  .text-fast-signup{
+    position: relative;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+  .text-fast-signup::before {
+    content: "Đăng kí nhanh";
+    position: absolute;
+    background: transparent;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    background-color: white;
+    text-align: center;
+  }
+  footer{
+    background-color: #fff;
+  }
+    .footer-distributed{
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 55px 50px;
+    }
+    
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    /* Footer left */
+    
+    .footer-distributed .footer-left{
+      width: 40%;
+    }
+    
+    
+    /* Footer links */
+    
+    .footer-distributed .footer-links{
+      margin: 20px 0 12px;
+      padding: 0;
+    }
+    
+    .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+      font-weight:400;
+      text-decoration: none;
+      color:  #716666;
+    }
+    
+    .footer-distributed .footer-company-name{
+      color:  #716666;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+    
+    /* Footer Center */
+    
+    .footer-distributed .footer-center{
+      width: 35%;
+    }
+    
+    .footer-distributed .footer-center i{
+      background-color:  #eae5e5;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+    
+    .footer-distributed .footer-center i.fa-envelope{
+      font-size: 17px;
+      line-height: 38px;
+    }
+    
+    .footer-distributed .footer-center p{
+      display: inline-block;
+      font-weight:400;
+      vertical-align: middle;
+      margin:0;
+    }
+    
+    .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:14px;
+      line-height:2;
+    }
+    
+    .footer-distributed .footer-center p a{
+      color:  lightseagreen;
+      text-decoration: none;;
+    }
+    
+    .footer-distributed .footer-links a:before {
+      content: "|";
+      font-weight:300;
+      font-size: 20px;
+      left: 0;
+      display: inline-block;
+      padding-right: 5px;
+    }
+    
+    .footer-distributed .footer-links .link-1:before {
+      content: none;
+    }
+    
+    /* Footer Right */
+    
+    .footer-distributed .footer-right{
+      width: 20%;
+    }
+    
+    .footer-distributed .footer-company-about{
+      line-height: 20px;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+    }
+    
+    .footer-distributed .footer-company-about span{
+      display: block;
+      color:  #8c8484;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+.sigup{
+    height: 700px;
+}
